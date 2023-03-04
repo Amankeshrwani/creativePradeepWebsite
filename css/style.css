@@ -187,6 +187,9 @@ nav ul li:hover a {
         flex-direction: column-reverse;
     }
 
+    .container .smallbox .content{
+        width: 90%;
+    }
 
     .disnone {
         display: none;
