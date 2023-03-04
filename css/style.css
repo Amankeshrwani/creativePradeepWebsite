@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    --backgroundcolor: rgb(8, 8, 8);
+    --navhovercolor: rgb(168, 168, 168);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--backgroundcolor);
+    height: 38px;
+    /* width: 100; */
+    align-items: center;
+    transition: 0.3s;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+samp a {
+    color: red;
+    font-size: 16px;
+    font-size: 34px;
+    text-align: center;
+}
+
+samp label a {
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.1s;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 0px solid cyan;
+}
+
+nav ul li:hover a {
+    color: var(--navhovercolor);
+    border-bottom: 5px solid cyan;
+}
+
+
+/* container css */
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* .container:after{
+    content: "(after)";
+    background: url(/img/logo2.png) no-repeat center center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+ */
+
+.container .smallbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    margin: 26px 0px;
+    border-radius: 10px;
+    transition: 0.5s;
+    min-height: 21rem;
+    background: linear-gradient(180deg, rgb(232 232 232), transpare);
+
+
+}
+
+.container .smallbox:hover {
+    box-shadow: 0px 8px 22px -6px;
+    margin: 28px 0px;
+}
+
+.imghover {
+    height: 12rem;
+    transition: 0.5s;
+}
+
+.imghover:hover {
+    box-shadow: 0px 0px 15px;
+    height: 14rem;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.container .smallbox .content {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+.container .smallbox .content .heading {
+    font-size: 37px;
+    margin: 20px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container .smallbox .content .heading samp {
+    color: red;
+    font-size: 40px;
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
+    padding: 10px 1px 0px 13px;
+}
+
+.container .smallbox .content .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .smallbox .content .text button {
+    width: 120px;
+    padding: 7px 0px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 35px 0px;
+    background-color: #941aff;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid;
+    box-shadow: 0px 5px 10px -1px;
+}
+
+.container .smallbox .content .text button:hover {
+    box-shadow: 0px 3px 10px -1px;
+}
+
+.container .smallbox .content .text button:hover {
+    background-color: #7d18d5;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .navbartop {
+        height: 363px;
+        flex-direction: column;
+    }
+
+    nav .navul1 {
+        /* display: none; */
+        /* background: yellow; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    .container .smallbox{
+        flex-direction: column-reverse;
+    }
+
+
+    .disnone {
+        display: none;
+    }
+
+    nav ul .navitem {
+        margin: 20px 0px;
+    }
+
+    .hamburger {
+        display: block;
+
+    }
+
+    .hamburgerline {
+        display: block;
+        height: 3px;
+        width: 40px;
+        margin: 6px;
+        background-color: white;
+    }
+
+    .text p {
+        overflow-y: scroll;
+
+    }
+
+    .imghover:hover {
+        box-shadow: 0px 0px 0px;
+        height: 50%;
+    }
+
+    .imghover {
+        border-radius: 50%;
+        width: 30%;
+    }
+}
+
+
+
+
+
+
+
+
+.copyright {
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
